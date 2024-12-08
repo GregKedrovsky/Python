@@ -2,10 +2,11 @@
 > Trying to get all my notes housed in one place...
 
 ## Contents
-- [Invoke the Interpreter](https://github.com/GregKedrovsky/Python/edit/main/README.md#invoke-the-interpreter)
-- [Argument Passing](https://github.com/GregKedrovsky/Python/edit/main/README.md#argument-passing)
-- [Shebang](https://github.com/GregKedrovsky/Python/edit/main/README.md#shebang-additional-source)
-- [Comments](https://github.com/GregKedrovsky/Python/edit/main/README.md#comments)
+- [Invoke the Interpreter](invoke-the-interpreter)
+- [Argument Passing](#argument-passing)
+- [Shebang](#shebang-additional-source)
+- [Comments](#comments)
+- [Numbers](#numbers)
 
 ## 
 
@@ -89,12 +90,38 @@ The integer numbers (e.g. 2, 4, 20) have type `int`, the ones with a fractional 
 - **Division** alwas returns a float.
 - You can force **floor division** and get an integer using the `//` operator.
 - To calculate a **remainder**, use the `%`
+- Calculate **powers** with `**`.
 
 ```
->>> 17 / 3  # classic division returns a float
+>>> 17 / 3          # classic division returns a float
 5.666666666666667
->>> 17 // 3  # floor division discards the fractional part
+>>> 17 // 3         # floor division discards the fractional part
 5
->>> 17 % 3  # the % operator returns the remainder of the division
+>>> 17 % 3          # the % operator returns the remainder of the division
 2
+>>> 
+>>> 5 ** 2          # 5 squared
+25
+>>> 2 ** 7          # 2 to the power of 7
+128
 ```
+
+**NOTE:** In interactive mode, the last printed expression is assigned to the variable `_` (underline).
+- This means that when you are using Python as a desk calculator, it is somewhat easier to continue calculations.
+- This variable should be treated as read-only by the user. 
+- Don’t explicitly assign a value to it (you would create an independent local variable with the same name masking the built-in variable with its magic behavior).
+- Example:
+
+```
+>>> tax = 12.5 / 100
+>>> price = 100.50
+>>> price * tax
+12.5625
+>>> price + _
+113.0625
+>>> round(_, 2)
+113.06
+```
+
+
+
