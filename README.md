@@ -8,6 +8,11 @@
 - [Comments](#comments)
 - [Numbers](#numbers)
 - [Text](#text)
+  - [Escape Character: `\`](#escape-character-)
+  - [Multi-Line Strings](#multi-line-strings)
+  - [Concatenate Strings](#concatenate-strings)
+  - [Indexing Strings](#indexing-strings)
+  - [Slicing Strings](#slicing-strings)
 
 ## 
 
