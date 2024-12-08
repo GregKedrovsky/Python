@@ -7,6 +7,8 @@
 - [Shebang](https://github.com/GregKedrovsky/Python/edit/main/README.md#shebang-additional-source)
 - [Comments](https://github.com/GregKedrovsky/Python/edit/main/README.md#comments)
 
+## 
+
 ## [Invoke the Interpreter](https://docs.python.org/3/tutorial/interpreter.html):
 
 From the CLI: `python` (Kali: /usr/bin/python*) 
@@ -77,4 +79,22 @@ Examples:
 spam = 1  # and this is the second comment
           # ... and now a third!
 text = "# This is not a comment because it's inside quotes."
+```
+
+## Numbers
+
+The operators `+`, `-`, `*` and `/` can be used to perform arithmetic; parentheses (`()`) can be used for grouping. 
+
+The integer numbers (e.g. 2, 4, 20) have type `int`, the ones with a fractional part (e.g. 5.0, 1.6) have type `float`. 
+- **Division** alwas returns a float.
+- You can force **floor division** and get an integer using the `//` operator.
+- To calculate a **remainder**, use the `%`
+
+```
+>>> 17 / 3  # classic division returns a float
+5.666666666666667
+>>> 17 // 3  # floor division discards the fractional part
+5
+>>> 17 % 3  # the % operator returns the remainder of the division
+2
 ```
