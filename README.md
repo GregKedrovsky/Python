@@ -7,6 +7,7 @@
 - [Shebang](#shebang-additional-source)
 - [Comments](#comments)
 - [Numbers](#numbers)
+- [Text](#text)
 
 ## 
 
@@ -122,6 +123,85 @@ The integer numbers (e.g. 2, 4, 20) have type `int`, the ones with a fractional 
 >>> round(_, 2)
 113.06
 ```
+
+## Text 
+
+Text is also referred to as "strings" and represented by the type `str`.
+- Numbers can be strings (type `str`) also.
+- Strings are usually enclosed in quotes ('single' or "double" are treated the same). 
+
+### Escape Character: `\`
+- In order to print an otherwise special character (like a quote), you need to *escape* it with the backslash (`\`).
+- Example:
+```
+>>> doesn\'t'        # use \' to escape the single quote...
+"doesn't"
+>>> "doesn't"        # ...or use double quotes instead
+"doesn't"
+```
+
+If you don’t want characters prefaced by `\` to be interpreted as special characters, you can use raw strings by adding an `r` before the first quote:
+```
+>>> print('C:\some\name')    # here \n means newline!
+C:\some
+ame
+>>> print(r'C:\some\name')   # note the r before the quote
+C:\some\name
+```
+
+### Multi-Line Strings
+- For multi-line (block) strings, use triple-quotes (single or double). Example:
+```
+print("""\
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect to
+""")
+```
+
+### Concatenate Strings
+- Strings can be concatenated (glued together) with the `+` operator, and repeated with `*`.
+
+### Indexing Strings
+- Strings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:
+```
+>>> word = 'Python'
+>>> word[0]  # character in position 0
+'P'
+>>> word[5]  # character in position 5
+'n'
+```
+- Indices may also be negative numbers, to start counting from the right:
+```
+>>> word[-1]  # last character
+'n'
+>>> word[-2]  # second-last character
+'o'
+>>> word[-6]
+'P'
+```
+
+### Slicing Strings
+- Slicing allows you to obtain a substring.
+![image](https://github.com/user-attachments/assets/575c8d54-ca9b-4df3-8437-ce1135321595)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
