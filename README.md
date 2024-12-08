@@ -25,9 +25,9 @@ The script name and additional arguments thereafter are turned into a list of st
   - When no script and no arguments are given, `sys.argv[0]` is an empty string. 
   - When the script name is given, `sys.argv[0]` is the name of the script.
 
-## [Shebang](https://docs.python.org/3/tutorial/appendix.html#tut-scripts)
+## [Shebang](https://docs.python.org/3/tutorial/appendix.html#tut-scripts) ([additional source](https://stackoverflow.com/questions/6908143/should-i-put-shebang-in-python-scripts-and-what-form-should-it-take))
 
-You can make your Python script directly executable (i.e., you don't have to type `python [script name`; you just type the script name) by including a shebang statement in the ***first line*** of your script.
+You can make your Python script directly executable (i.e., you don't have to type `python [script name]`; you just type the script name) by including a shebang statement in the ***first line*** of your script.
 - You add the **correct** shebang line to your script.
 - You `chmod` your script so it's executable. Done.
 
@@ -55,4 +55,3 @@ Also, do ***not*** use:
 - Python may be installed at `/usr/bin/python` or `/bin/python` so the above #! will likely fail.
 - `env` will always be found in `/usr/bin/`, and its job is to locate bins (like `python`) using PATH.
 - No matter how `python` is installed, its path will be added to this variable, and `env` will find it (if not, python is not installed).
-- [Source](https://stackoverflow.com/questions/6908143/should-i-put-shebang-in-python-scripts-and-what-form-should-it-take)
