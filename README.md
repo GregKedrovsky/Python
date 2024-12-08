@@ -133,7 +133,9 @@ The integer numbers (e.g. 2, 4, 20) have type `int`, the ones with a fractional 
 
 Text is also referred to as "strings" and represented by the type `str`.
 - Numbers can be strings (type `str`) also.
-- Strings are usually enclosed in quotes ('single' or "double" are treated the same). 
+- Strings are usually enclosed in quotes ('single' or "double" are treated the same).
+- Strings are immutable. You cannot change them. If you need to change a string, you need to create a new one.
+- The built-in function `len()` will tell you the length of a string (e.g., `len("greg")` is 4).
 
 ### Escape Character: `\`
 - In order to print an otherwise special character (like a quote), you need to *escape* it with the backslash (`\`).
@@ -188,6 +190,18 @@ Usage: thingy [OPTIONS]
 
 ### Slicing Strings
 - Slicing allows you to obtain a substring.
+- Think of the indices as pointing between characters, with the left edge of the first character numbered 0 (or `:`). Then the right edge of the last character of a string of n characters has index n (or `:`)
+- Example:
+```
+ +---+---+---+---+---+---+
+ | P | y | t | h | o | n |
+ +---+---+---+---+---+---+
+ 0   1   2   3   4   5   6
+-6  -5  -4  -3  -2  -1
+```
+- The first row of numbers gives the position of the indices 0...6 in the string.
+- The second row gives the corresponding negative indices.
+
 ![image](https://github.com/user-attachments/assets/575c8d54-ca9b-4df3-8437-ce1135321595)
 
 
