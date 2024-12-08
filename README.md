@@ -1,12 +1,19 @@
 # Python
 > Trying to get all my notes housed in one place...
 
+## Contents
+- [Invoke the Interpreter](https://github.com/GregKedrovsky/Python/edit/main/README.md#invoke-the-interpreter)
+- [Argument Passing](https://github.com/GregKedrovsky/Python/edit/main/README.md#argument-passing)
+- [Shebang](https://github.com/GregKedrovsky/Python/edit/main/README.md#shebang-additional-source)
+- [Comments](https://github.com/GregKedrovsky/Python/edit/main/README.md#comments)
+
 ## [Invoke the Interpreter](https://docs.python.org/3/tutorial/interpreter.html):
 
 From the CLI: `python` (Kali: /usr/bin/python*) 
 - This place you in Interactive Mode, gives you the version of Python used, etc.
 - You'll be given the primary prompt: `>>>`
 - When you enter a command that requires additional lines of code, you'll get the secondary prompt: `...`
+- If you are given a blank `...`, you must hit ENTER: a blank line is used to end a multi-line command.
 
 Or use the following command:
 
@@ -55,3 +62,19 @@ Also, do ***not*** use:
 - Python may be installed at `/usr/bin/python` or `/bin/python` so the above #! will likely fail.
 - `env` will always be found in `/usr/bin/`, and its job is to locate bins (like `python`) using PATH.
 - No matter how `python` is installed, its path will be added to this variable, and `env` will find it (if not, python is not installed).
+
+## Comments
+
+Comments in Python start with the hash character (`#`) and extend to the end of the physical line.
+- A comment may appear at the start of a line or following whitespace or code
+- A comment cannot appear within a string literal.
+  - A hash character within a string literal is just a hash character.
+- Comments are often used to clarify code.
+
+Examples:
+```
+# this is the first comment
+spam = 1  # and this is the second comment
+          # ... and now a third!
+text = "# This is not a comment because it's inside quotes."
+```
