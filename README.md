@@ -2,12 +2,18 @@
 > Trying to get all my notes housed in one place...
 
 ## Contents
+- [Resources](#resources)
 - [Invoke the Interpreter](invoke-the-interpreter)
 - [Argument Passing](#argument-passing)
 - [Shebang](#shebang-additional-source)
 - [Comments](#comments)
 
 ## 
+
+## Resources
+
+- [Python Tutorial](https://docs.python.org/3.12/tutorial/index.html)
+- [My Python Cheat Sheet](https://github.com/GregKedrovsky/Cheat-Sheets/blob/main/python/python_cheat_sheet.pdf) (mostly Python2)
 
 ## [Invoke the Interpreter](https://docs.python.org/3/tutorial/interpreter.html):
 
@@ -80,3 +86,8 @@ spam = 1  # and this is the second comment
           # ... and now a third!
 text = "# This is not a comment because it's inside quotes."
 ```
+
+## 0 = True
+In Python, like in C, any non-zero integer value is true; zero is false. 
+- The condition may also be a string or list value, in fact any sequence.
+- Anything with a non-zero length is true, empty sequences are false. 
