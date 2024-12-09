@@ -132,12 +132,15 @@ Usage: thingy [OPTIONS]
 
 A *list* is a compound data type--a data type used to group values of the same type together.
 - Although lists ***may*** contain items of different types, they usually contain items of the same data type.
-- Lists are written as comma-separated values (items) between square brackets
+- Lists are written as comma-separated values (items) between square brackets (you can nest: lists of lists).
+- You can get the length of a list with the `len()` function.
 
 ```
 >>> int_list = [1, 2, 3, 4]
 >>> int_list
 [1, 2, 3, 4]
+>>> len(int_list)
+4
 ```
 
 ### Index & Slice
@@ -153,6 +156,15 @@ Add new items to the end of the list with `list.append()`
 >>> countdown.append(1)
 >>> countdown
 [10, 9, 8, 7, 6, 5, 4, 3, 2]
+```
+
+### Reference
+Assigning an existing list to a variable does not copy the list.
+- The list is the same object. Each variable that references that list points to the same object (the same address in memory).
+```
+>>> rgb = ["Red", "Green", "Blue"]
+>>> rgba = rgb
+>>> id(rgb) == id(rgba)            # they reference the same object
 ```
 
 
