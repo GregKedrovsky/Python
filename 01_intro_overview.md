@@ -130,5 +130,30 @@ Usage: thingy [OPTIONS]
 
 ## Lists
 
-START HERE
+A *list* is a compound data type--a data type used to group values of the same type together.
+- Although lists ***may*** contain items of different types, they usually contain items of the same data type.
+- Lists are written as comma-separated values (items) between square brackets
+
+```
+>>> int_list = [1, 2, 3, 4]
+>>> int_list
+[1, 2, 3, 4]
+```
+
+### Index & Slice
+Like all other built-in sequence types (like strings), lists can be *indexed* and *sliced*: 
+- Indexed items are returned as their current type (int, str, etc.).
+  - Reference the index to replace the item at that index: `list1[0] = new_value`
+- Sliced items are returned as a new list.
+
+### Append
+Add new items to the end of the list with `list.append()`
+```
+>>> countdown = [10, 9, 8, 7, 6, 5, 4, 3, 2]
+>>> countdown.append(1)
+>>> countdown
+[10, 9, 8, 7, 6, 5, 4, 3, 2]
+```
+
+
 
