@@ -1,5 +1,4 @@
-# Python
-> Trying to get all my notes housed in one place...
+# Intro & Overview
 
 ## Contents
 - [Numbers](#numbers)
