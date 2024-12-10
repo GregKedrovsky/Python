@@ -25,7 +25,6 @@ first,second,third
 ```
 >>> x,y,z = 'first', 'second', 'third'
 >>> print(x,y,z, file=open('data.txt', 'w')
-
 ```
 
 ## Print File Text
