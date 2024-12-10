@@ -2,6 +2,11 @@
 
 The print() function writes the value of the argument(s) it is given.
 
+## Contents:
+- [Basic Usage](#basic-usage)
+- [Print to a File](#print-to-a-file)
+- [Print File Text](#print-file-text)
+
 ## Basic Usage: 
 ```
 print(objects, sep=' ', end='\n', file=sys.stdout, flush=False)
