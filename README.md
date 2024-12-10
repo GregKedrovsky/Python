@@ -79,6 +79,8 @@ Comments in Python start with the hash character (`#`) and extend to the end of 
 - A comment cannot appear within a string literal.
   - A hash character within a string literal is just a hash character.
 - Comments are often used to clarify code.
+  - Precede **major segments** of code with a purpose statement
+  - Use **line comments** to explain variables, ambiguous code, etc. 
 
 Examples:
 ```
