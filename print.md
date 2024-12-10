@@ -1,6 +1,6 @@
 # Print
 
-The print() function writes the value of the argument(s) it is given.
+The `print()` function writes the value of the argument(s) it is given.
 
 ## Contents:
 - [Basic Usage](#basic-usage)
