@@ -175,6 +175,15 @@ Example (continued from above):
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
 ```
 
+### Lambda Expressions
+- These are small functions that crecate in-line without a `def` statement.
+- General Syntas: `lambda parameter1, parameter2, ... paramenterN : expression using the paramenters`
+- Examples:
+```
+f = (lambda x, y, z : x + y + z)   # f(2, 3, 4) returns 9
+f = (lambda x : x ** 2             # f(4) returns 16
+```
+
 ## Classes
 
 ### Definition:
@@ -193,6 +202,46 @@ obj_ref = Class_name( arguments )
 ### Method Invocation: 
 ```
 obj_ref.method_name( arguments )
+```
+
+### Document (Doc) Strings
+- These are coded as strings at the ***top*** of **module** files, **function** statements, and **class** statements.
+- The `help()` function (e.g., `help(YourFunction)`) will display the DocStrings like a man page.
+
+**Top of Module Files:**
+```
+"""
+Program: name.py
+Author: FirstName LastName
+Last Date Modified: mm/dd/yyyy
+
+Give a purpose statment on its own line, then the following...
+
+1. CONSTANTS
+2. Inputs
+3. Computations
+4. Outputs
+"""
+```
+
+**Top of Function Definitions:**
+```
+def func(parameters):
+  """
+  First line: short concise summary of the object's purpose.
+
+  Describe the object's calling conventions, side effects, etc.
+  """
+```
+
+**Top of Class Defintions:**
+```
+Class Whatever
+  """
+  First line: short concise summary of the object's purpose.
+
+  Describe the object's calling conventions, side effects, etc.
+  """
 ```
 
 ## Exception Handling
